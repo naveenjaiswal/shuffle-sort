@@ -1,0 +1,195 @@
+/* reset css start */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-align: left;
+}
+
+body {
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1;
+    height: 100vh;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    min-width: 40px;
+}
+
+a,
+input,
+textarea {
+    outline: none;
+    text-decoration: none
+}
+
+/* reset css end */
+
+.wrapper {
+    display: flex;
+    height: 90vh;
+    background: #ebebeb;
+}
+
+.cen {
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ebebeb;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.button-group {
+    flex: 1 1 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.grid {
+    flex: 1 1 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    font-size: 24vh;
+    flex: 0 0 33%;
+    color: white;
+}
+
+.color1 {
+    background: #2b3d43;
+}
+
+.color2 {
+    background: #71a0af;
+}
+
+.color3 {
+    background: #2c8cac;
+
+}
+
+.color4 {
+    background: #babcbc;
+}
+
+.btn {
+    width: 60%;
+    font-size: 1rem;
+    background: #71a0af;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    margin: 1rem auto;
+    padding: 1rem 0;
+    border-radius: .8rem;
+}
+
+
+@media only screen and (max-width: 480px) {
+    .title {
+        background: #323232;
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        padding: 0.75rem;
+        background: white;
+    }
+
+    .button-group {
+        order: 1;
+        flex: 1 0 10%;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .grid {
+        order: 2;
+        flex: 1 1 90%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .row {
+        height: auto;
+        font-size: 1rem;
+        flex: 0 0 100%;
+        margin: 0.25rem 0;
+        border-left: 0.5rem solid;
+        background: #ebebeb;
+        color: black;
+    }
+
+    .btn {
+        width: 35%;
+        margin: 0 0.25rem;
+    }
+
+    .color1 {
+        border-color: #2b3d43;
+    }
+
+    .color2 {
+        border-color: #71a0af;
+    }
+
+    .color3 {
+        border-color: #2c8cac;
+    }
+
+    .color4 {
+        border-color: #babcbc;
+    }
+
+    .footer {
+        background: white;
+    }
+
+}
